@@ -1,8 +1,3 @@
-
-
-
-
-
 class Chat(object):
     def __init__(self) -> None:
         self.content = []
@@ -21,4 +16,4 @@ class Chat(object):
     
     def __repr__(self) -> str:
         return str(self)
-        
+
