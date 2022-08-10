@@ -29,6 +29,9 @@ class Round(object):
         start_new_thread(self.time_thread, ())
 
     def time_thread(self):
+        """
+        Runs in thread to keep track of the time
+        """
         while self.time > 0:
             time.sleep(1)
             self.time -=1
