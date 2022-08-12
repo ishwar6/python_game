@@ -23,12 +23,22 @@ class Game(object):
 
 
     def player_guess(self, player, guess):
+        
+        """Makes the player guess
+        Args:
+            player (player): player
+            guess (word): str
+        """
         pass
 
     def player_disconnected(self, player):
         pass
 
     def skip(self):
+        if self.round:
+            self.round.skip()
+        else:
+
         pass
 
     def round_ended(self):
