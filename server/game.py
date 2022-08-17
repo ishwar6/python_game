@@ -23,7 +23,7 @@ class Game(object):
 
 
     def player_guess(self, player, guess):
-        
+
         """Makes the player guess
         Args:
             player (player): player
@@ -36,6 +36,7 @@ class Game(object):
 
     def skip(self):
         if self.round:
+            
             self.round.skip()
         else:
 
