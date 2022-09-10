@@ -41,7 +41,7 @@ def token_required(f):
     return decorated
 
 
-@app.post('/createuser')
+@app.post('/createUser')
 @token_required
 def index():
     data = request.data.decode('utf-8')
